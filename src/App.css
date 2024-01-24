@@ -1,0 +1,726 @@
+.container {
+    overflow-x: hidden;
+    font-family: 'Roboto';
+    background:linear-gradient(145deg, #fbffd5, #fffee0, #fff2f8, #ffefff, #dcf0fa, #e2efff );
+  }
+  
+  header {
+    display: flex;
+    max-height: 80px;
+    background: #333;
+    color: white;
+    align-items: center;
+   
+  }
+  
+  .container-boxed {
+    display: flex;
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto; 
+    padding: 8px 0;
+  }
+  
+  .heading-alt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(103%) contrast(103%);
+  }
+  
+  .menubar {
+    /* width: 80%; */
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+  
+  .menubar li {
+    padding: 0px 15px;
+  }
+  
+  .connect {
+    margin-left: 5px;
+    padding: 6px 15px;
+    background: #fcfcfc;
+    outline: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color:black;
+  }
+  
+  .profilePic {
+    max-height: 500px;
+  }
+  
+  .boxed-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 80px 0px;
+  }
+  
+  .profilePicHolder {
+     width: 250px;
+     height: 250px;
+     background-image:url('./images/kiran.jpg');
+     background-position: -100px -290px;
+     border-radius: 50%;
+  }
+  
+  .dark {
+    background: rgb(9, 9, 98);
+  }
+  
+  .content h4 {
+    line-height: 30px;
+    font-weight: normal;
+  }
+  
+  .logos { 
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin: 3px;
+  }
+  
+  .content h2::after { 
+      content: "";
+      border-bottom: 1px solid #f900;
+      display: block;
+      width:0px;
+      animation: animate 2s ease-in forwards;
+   }
+  
+  @keyframes animate {
+    0% {
+      border:none;
+      width: 0px;
+    }
+    100% {
+      border-bottom: 1px solid #f90;
+      width: 120px;
+    }
+  }
+  
+  .centered { 
+    text-align: center;
+  }
+  
+  .projectSection {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 80px 0;
+  }
+  
+  .articleSection {
+    display: flex;
+    align-items: center;
+    padding: 60px 0 80px 0;
+  }
+  
+  .projectsHolder { 
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+  }
+  
+  .projectsHolder div {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .section-title {
+    display: flex;
+    color: #1f1f1f;
+    transform: rotate(270deg);
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left:50px;
+  }
+  
+  .section-title-alt {
+    display: flex;
+    color: #1f1f1f;
+    transform: rotate(270deg);
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right:50px;
+  }
+  
+  .section-title-alt h5 {
+    letter-spacing: 2px;
+    color: #bfbfbf
+  }
+  
+  .section-title-alt hr {
+    width:100px;
+  }
+  
+  .section-title h5 {
+    letter-spacing: 2px;
+    color: #bfbfbf;
+  }
+  
+  .section-title hr {
+    width:100px;
+  }
+  
+  .sectionIcon {
+    font-weight: bolder;
+    font-size: 40px;
+    transform: rotate(-270deg);
+    color: #bfbfbf;
+  }
+  
+  .sectionIcon-alt {
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  
+  .mainContentArea { 
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .rightContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aboutSection {
+    min-height: 60vh;
+    display: flex;
+  }
+  
+  .ContentArea {
+    width: 90%;
+    line-height: 1.5rem;
+  }
+  
+  .footer {
+    background: #333;
+    color: white;
+    padding: 10px 40px;
+  }
+  
+  .body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .btn-rounded {
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #fcfcfc;
+  }
+  
+  .weatherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 105px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px #ffefff;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .weatherParameters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    padding: 5px 105px;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .productdetail { 
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .productImage img {
+    box-shadow: 0px 0px 5px #cfcfcf;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .productDescription {
+    width: 40%;
+    padding: 15px;
+    padding-top: 0px;
+  }
+  
+  .productDescription h1 {
+    font-size: 30px;
+    color: grey
+  }
+  
+  .productDescription .content {
+    width: 80%;
+  }
+  
+  .productDescription .category {
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: teal;
+  }
+  
+  .productDescription .price {
+    font-size: 20px;
+    color: rgb(205, 1, 1);
+  }
+  
+  .productDescription button {
+    padding: 8px 36px;
+    font-size: 14px;
+    background: #e2efff;
+    color: green;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px #cfcfcf;
+    line-height: 2em;
+  }
+  
+  .product > h1 {
+    text-decoration: underline;
+    font-size: 36px;
+  }
+  
+  .ipContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, left top, right top, 
+    from(rgb(25, 76, 192)), color-stop(20%, rgb(196, 26, 3)), 
+    color-stop(40%, rgb(236, 190, 6)), 
+    color-stop(60%, rgb(25, 76, 192)), 
+    color-stop(80%, rgb(3, 116, 8)), 
+    to(rgb(196, 26, 3)));
+      font-size: 60px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .flagContainer { 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+   }
+  
+  .flagHolder { 
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 5px #cfcfcf; */
+    width: 150px;
+    height: 100px;
+    border: 1px solid #eee;
+  }
+  
+  .flags {
+    width: 20%;
+    box-shadow: 0px 0px 3px #cfcfcf;
+    padding: 15px 5px;
+  }
+  
+  .flags p {
+    margin-bottom: 0;
+  }
+  
+  .red {
+    color:red;
+    font-size:10px; 
+    border:1px solid #fff;
+    border-radius:50%;
+  }
+  
+  .yellow {
+    color:yellow;
+    font-size:10px; 
+    border:1px solid #fff;
+    border-radius:50%;
+  }
+  
+  .orange {
+    color: orange;
+    font-size:10px; 
+    border:1px solid #fff;
+    border-radius:50%;
+  }
+  
+  .green {
+    color: green;
+    font-size:10px; 
+    border:1px solid #fff;
+    border-radius:50%;
+  }
+  
+  .purple {
+    color: purple;
+    font-size:10px; 
+    border:1px solid #fff;
+    border-radius:50%;
+  }
+  
+  .overlay h2 {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .overlay p {
+    padding-left: 40px;
+    font-size: 14px;
+  }
+  
+  .overlay sup {
+    padding-left: 3px;
+    font-size: 8px;
+  }
+  
+  .overlay hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    width: 90%;
+    padding: 0;
+  }
+  
+  .overlay p span {
+    float: right;
+    margin-right: 30px;
+    margin-top: -1px;
+  }
+  
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+  
+  }
+  
+  .colors .colorCards {
+    height:10vh;
+    width:15%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px #333;
+  }
+  
+  .colorCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 1px 2px #333;
+    font-size: 16px;
+  }
+  
+  .colorContainer h4 {
+    text-align: center;
+    font-size: 44px;
+  }
+  
+  .bible { 
+    border: 15px solid #1f1f1f;
+    min-height: 75vh;
+    max-width: 600px;
+    margin: 15px auto;
+  }
+  
+  .bibleCards {
+    background-image: url('./images/bible.jpg');
+    margin: 60px;
+    min-height: 60vh;
+    padding: 50px;
+    color: #fff;
+    text-shadow: 0px 1px #333;
+    text-align: center;
+  }
+  
+  .bibleCards h2 {
+    font-size: 40px;
+  }
+  
+  .bibleCards button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    outline: none;
+    border:none;
+  }
+  
+  .passwordContainer {
+    width: 400px;
+    height: 445px;
+    border: 1px solid #333;
+    background: rgba(5, 5, 118, 0.882);
+    color: #fff;
+    border-radius: 2px;
+  }
+  
+  .passwordContainer h2 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px #000;
+  }
+  
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .inputHolder {
+    background: #fff;
+    margin: 8px 30px;
+    border-radius: 2px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputHolder input {
+    padding: 8px;
+    border: none;
+    background: #eee;
+    color: #333;
+    width: 200px;
+    height: 22px;
+    border-radius: 2px;
+  }
+  .inputHolder span {
+    margin: 0px 5px;
+    padding-left: 6px;
+  }
+  
+  .keyicon {
+    transform: rotate(45deg);
+    font-size: 18px;
+    padding-left: 2px;
+  
+  }
+  
+  .checkboxHolder {
+    text-align: left;
+    padding: 6px;
+    background: #fff;
+    margin: 8px 30px;
+    border-radius: 2px;
+    color: #1f1f1f;
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkboxHolder input {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+  }
+  
+  .checkboxHolder span {
+    margin-top: -2px;
+    padding-left: 15px;
+  }
+  
+  .formContainer button {
+    margin: 5px 28px;
+    background: #000;  
+    padding: 10px 20px;
+    border: none;
+    outline:none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    font-weight: 200;
+    border-radius: 2px;
+  }
+  
+  .timerContainer, .counterContainer {
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 0px 1px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./images/timer-bg.jpg');
+    background-size: cover;
+  }
+  
+  .counterContainer {
+    background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/new-year.jpg');
+    background-size: cover;
+  }
+  
+  .timerContainer h1, .counterContainer h1 {
+    font-size: 64px;
+    margin-top: 0;
+  }
+  
+  .timerContainer sub, .counterContainer sub {
+    font-size: 20px; 
+    padding-right: 20px;
+  }
+  
+  .quizContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 0 auto;  
+    width:800px;
+  }
+  
+  .quiz {
+    background: turquoise;
+  }
+  
+  .questionCard {
+    font-size: 18px;
+    padding: 5px;
+    margin: 0px 4px;
+  }
+  
+  .optionCard {
+    background: white;
+    box-shadow: 0px 0px 2px #333;
+    margin: 4px 4px;
+    padding: 5px;
+  }
+  
+  .gridtemplate {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 5px;
+    background-color: #000;
+    padding: 5px;
+  }
+
+  .gridtemplate > div {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .gridtemplate img {
+    padding: 5px;
+  }
+
+  @media screen and (max-width:768px) {
+    .timerContainer {
+      background-position: center center;
+      /* background-size: contain; */
+    }
+  
+    .counterContainer { 
+        background: linear-gradient(45deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/new-year-mobile.jpg');
+        background-position: center center;
+     }
+  
+    .timerContainer h1 {
+      font-size: 36px;
+    }
+  
+    .counterContainer h1 {
+      font-size: 28px;
+    }
+  
+    .counterContainer h2 {
+      font-size: 18px;
+    }
+  
+    .counterContainer sub {
+      font-size: 10px;
+    }
+  
+    .productdetail {
+      flex-direction: column;    
+    }
+    .productDescription{
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+    }
+    .product{
+      overflow: visible;
+    }
+    .productImage{
+      margin:0 auto;
+    }
+    .boxed-container{
+      padding: 20px 0px;
+    }
+    .productDescription .content{
+      width: auto;
+      margin-bottom: 0;
+    }
+    .productDescription .ctaHolder{
+      display: flex;
+    }
+    .productDescription h1{
+      margin: 0 auto;
+    }
+    .ipContainer h1 {
+      font-size: 40px;
+    }
+    .flagContainer {
+      align-items: center !important;
+      flex-direction: column !important;
+    }
+    .flags{
+      width: 80% !important;
+    }
+    .colorCards{
+      width: 100% !important;
+    }
+    .bibleCards {
+      margin:20px;
+    }
+  }
+  
+  
